@@ -1,0 +1,10 @@
+{"question":"Is 7 + 5 greater than 10?","answer":"Yes","split":"probe"}
+{"question":"Is 7 + 5 greater than 13?","answer":"No","split":"probe"}
+{"question":"Is 4 + 5 greater than 9?","answer":"No","split":"probe"}
+{"question":"Is 4 + 5 greater than 8?","answer":"Yes","split":"probe"}
+{"question":"Is 8 + 6 greater than 15?","answer":"No","split":"probe"}
+{"question":"Is 8 + 6 greater than 12?","answer":"Yes","split":"probe"}
+{"question":"Is 3 + 7 greater than 9?","answer":"Yes","split":"probe"}
+{"question":"Is 3 + 7 greater than 10?","answer":"No","split":"probe"}
+{"question":"Is 6 + 5 greater than 10?","answer":"Yes","split":"probe"}
+{"question":"Is 6 + 5 greater than 12?","answer":"No","split":"probe"}

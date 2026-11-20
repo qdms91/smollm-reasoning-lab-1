@@ -1,0 +1,4 @@
+{"question": "Is 7 + 5 greater than 10?", "reference": "Yes", "first_turn": {"text": "What is the value of 7 + 5?", "tokens": 12, "seconds": 1.3712}, "finals": {}}
+{"question": "Is 7 + 5 greater than 13?", "reference": "No", "first_turn": {"text": "What is the value of 7 + 5?", "tokens": 12, "seconds": 1.4547}, "finals": {}}
+{"question": "Is 4 + 5 greater than 9?", "reference": "No", "first_turn": {"text": "What is the value of 4 + 5?", "tokens": 12, "seconds": 1.2539}, "finals": {}}
+{"question": "Is 4 + 5 greater than 8?", "reference": "Yes", "first_turn": {"text": "What is the value of 4 + 5?", "tokens": 12, "seconds": 1.2525}, "finals": {}}

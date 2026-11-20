@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+
+# Local model weights and checkpoints
+models/
+
+# Local Python environments
+.venv/
