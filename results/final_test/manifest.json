@@ -1,0 +1,132 @@
+{
+  "dataset": "data/arithmetic_v1.jsonl",
+  "dataset_sha256": "38de04efc4d661f5344c95f639279aea57e9ee09eaed4ad2196db6e3492c4be3",
+  "endpoint": "native greedy Boolean accuracy; invalid counts as wrong",
+  "model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "script_sha256": {
+    "01_baseline_inference.py": "8d8ac221ef08201612f4f1c0a587c913ea6c0bad8fda204add5dc63d074bf29d",
+    "02_baseline_inference.py": "6a71a5b59d824981fffe875dc5b1850dfa9f44477a9b4079d86db628c9a46648",
+    "03_train_d.py": "5d9ccad5579b35f1582fe598263f0fa6ca76bc0c264b58c99a18d68260ef82b9",
+    "04_train_a.py": "125222549b696aeaae75de5ed4ae6eda9534b3ec3eda3d8ced5e4a2b82b8b361",
+    "05_train_c.py": "3e3a220c2c66a8fe1963d8ba4a7ab6e9441743eb9745adafe6b55fea5eac7de6",
+    "06_final_test.py": "1a8bfad45ab8e28108e6b2d95b85677bcaf05908f3b00473fc2073af809d3b46"
+  },
+  "cases": [
+    {
+      "name": "Frozen direct",
+      "protocol": "direct",
+      "checkpoint": null
+    },
+    {
+      "name": "B frozen",
+      "protocol": "loop",
+      "checkpoint": null
+    },
+    {
+      "name": "Frozen A plain",
+      "protocol": "plain",
+      "checkpoint": null
+    },
+    {
+      "name": "Frozen A scaffold",
+      "protocol": "scaffold",
+      "checkpoint": null
+    },
+    {
+      "name": "A plain q0.10 @100",
+      "protocol": "plain",
+      "checkpoint": "runs/a_train_plain_ycgj7udn/checkpoint_100",
+      "step": 100,
+      "validation_correct": 25,
+      "selection": "recorded validation winner"
+    },
+    {
+      "name": "A scaffold q0.10 @100",
+      "protocol": "scaffold",
+      "checkpoint": "runs/a_train_scaffold__e40g_iu/checkpoint_100",
+      "step": 100,
+      "validation_correct": 25,
+      "selection": "recorded validation winner"
+    },
+    {
+      "name": "A scaffold q0.40 @100",
+      "protocol": "scaffold",
+      "checkpoint": "runs/a_train_scaffold_nsp7tacy/checkpoint_100",
+      "step": 100,
+      "validation_correct": 25,
+      "selection": "recorded validation winner"
+    },
+    {
+      "name": "C optional @100",
+      "protocol": "loop",
+      "checkpoint": "runs/c_train_g63xhvyk/checkpoint_100",
+      "step": 100,
+      "validation_correct": 25,
+      "selection": "recorded validation winner"
+    },
+    {
+      "name": "D balanced 2e-06 @100",
+      "protocol": "direct",
+      "checkpoint": "runs/d_train_56_falkv/checkpoint_100",
+      "step": 100,
+      "validation_correct": 25,
+      "selection": "recorded validation winner"
+    },
+    {
+      "name": "D balanced 1e-05 @100",
+      "protocol": "direct",
+      "checkpoint": "runs/d_train_balanced_lr1e-05_i26nk195/checkpoint_100",
+      "step": 100,
+      "validation_correct": 25,
+      "selection": "recorded validation winner"
+    },
+    {
+      "name": "D blocked-training 1e-05 @100",
+      "protocol": "direct",
+      "checkpoint": "runs/d_train_blocked-training_lr1e-05_y8grpbpl/checkpoint_100",
+      "step": 100,
+      "validation_correct": 25,
+      "selection": "recorded validation winner"
+    },
+    {
+      "name": "D blocked-training 2e-06 @100",
+      "protocol": "direct",
+      "checkpoint": "runs/d_train_blocked-training_lr2e-06_dd00zcxh/checkpoint_100",
+      "step": 100,
+      "validation_correct": 25,
+      "selection": "recorded validation winner"
+    },
+    {
+      "name": "D balanced 2e-06 @25",
+      "protocol": "direct",
+      "checkpoint": "runs/d_train_gl8au8s8/checkpoint_25",
+      "step": 25,
+      "validation_correct": 25,
+      "selection": "recorded validation winner"
+    },
+    {
+      "name": "D threshold-paired 1e-05 @100",
+      "protocol": "direct",
+      "checkpoint": "runs/d_train_threshold-paired_lr1e-05_4gu0yj__/checkpoint_100",
+      "step": 100,
+      "validation_correct": 25,
+      "selection": "recorded validation winner"
+    },
+    {
+      "name": "D threshold-paired 1e-05 @25",
+      "protocol": "direct",
+      "checkpoint": "runs/d_train_threshold-paired_lr1e-05_4gu0yj__/checkpoint_25",
+      "step": 25,
+      "validation_correct": 25,
+      "selection": "preselected validation probability diagnostic"
+    },
+    {
+      "name": "D threshold-paired 2e-06 @100",
+      "protocol": "direct",
+      "checkpoint": "runs/d_train_threshold-paired_lr2e-06_g16mv217/checkpoint_100",
+      "step": 100,
+      "validation_correct": 25,
+      "selection": "recorded validation winner"
+    }
+  ]
+}

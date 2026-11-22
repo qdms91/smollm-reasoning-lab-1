@@ -1,8 +1,22 @@
+# Python and local environments
 __pycache__/
-*.pyc
-
-# Local model weights and checkpoints
-models/
-
-# Local Python environments
+*.py[cod]
 .venv/
+.env
+.vscode/
+
+# Large model files and checkpoints (keep locally)
+models/
+**/checkpoint_*/
+*.safetensors
+*.safetensors.index.json
+*.bin
+*.pt
+*.pth
+
+# Local archives, exploratory copies, and temporary files
+*.zip
+*_old.py
+*.tmp
+project1_publication_pack/
+results/replay_*/
